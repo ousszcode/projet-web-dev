@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dean Wagner">
+        <title>Sign Up!</title>
+        <link rel="icon" type="image/png" href="https://www.theodinproject.com/favicon-32x32.png">
+        <link rel="stylesheet" href="./res/signup.css">
+        <script src="./res/signup.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                handleForm();
+            });
+        </script>
+    </head>
+    <body>
+        <aside>
+            
+        </aside>
+
+        <main>
+            <header>
+                    <p>
+                        Filling up this form is your only way to access The Greatest <b>GAME LOBBY</b> ever created by two epic unique entities: <abbr title="THE GOAT!"><b>Yacine Allal</b></abbr> and <abbr title="LE 'GOAT' AUSSI"><b>Oussama Safar Zitoun</b></abbr>! You're about to experience true <code>NOSTALGIA</code> !
+                    </p>
+            </header>
+
+            <form>
+                <fieldset>
+                    <h2>New Account</h2>
+                    <label for="first-name" title="Required: Letters Only">
+                        First Name<span>*</span>
+                        <input type="text" id="first-name" pattern="[a-zA-Z]+" min="2" max="15" required>
+                    </label>
+                    <label for="last-name" title="Required: Letters Only">
+                        Last Name<span>*</span>
+                        <input type="text" id="last-name" pattern="[a-zA-Z]+" min="2" max="15" required>
+                    </label>
+                    <label for="email-address" title="Required: you@service.com">
+                        Email<span>*</span>
+                        <input type="email" id="email-address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="you@service.com" required>
+                    </label>
+                    <label for="phone-number" title="Optional: 123-456-7890">
+                        Phone Number
+                        <input type="tel" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                    </label>
+                    <label for="password-one" title="Required: At least 8 characters, 1 Upper, 1 Lower, 1 Number">
+                        Password<span>*</span>
+                        <input type="password" id="password-one" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
+                    </label>
+                    <label for="password-two" title="Required: Must Match">
+                        Confirm Password<span>*</span>
+                        <input type="password" id="password-two" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
+                    </label>
+                </fieldset>
+                <button type="submit">Create Account</button>
+                <div>Already have an account? <a href="../login-form/index.html">Log in</a></div>
+            </form>
+            <footer>
+                Created by <a href="">Yacine Allal / Oussama Safar Zitoun</a>
+            </footer>
+        </main>
+    </body>
+</html>

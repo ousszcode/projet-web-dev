@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dean Wagner">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="https://www.theodinproject.com/favicon-32x32.png">
+    <link rel="stylesheet" href="./res/login.css">
+    <script src="./res/login.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            handleForm();
+        });
+    </script>
+</head>
+<body>
+<aside>
+
+</aside>
+
+<main>
+    <header>
+        <p>
+            Welcome back! Please login to access The Greatest <b>GAME LOBBY</b> ever created by two epic unique entities: <abbr title="THE GOAT!"><b>Yacine Allal</b></abbr> and <abbr title="LE 'GOAT' AUSSI"><b>Oussama Safar Zitoun</b></abbr>! You're about to experience true <code>NOSTALGIA</code> !
+        </p>
+    </header>
+
+    <form>
+        <fieldset>
+            <h2>Login</h2>
+            <label for="email-address" title="Required: you@service.com">
+                Email<span>*</span>
+                <input type="email" id="email-address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="you@service.com" required>
+            </label>
+            <label for="password" title="Required: At least 8 characters, 1 Upper, 1 Lower, 1 Number">
+                Password<span>*</span>
+                <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
+            </label>
+        </fieldset>
+        <button type="submit">Login</button>
+        <div>Don't have an account? <a href="../index.html">Sign up</a></div>
+    </form>
+    <footer>
+        Created by <a href="">Yacine Allal / Oussama Safar Zitoun</a>
+    </footer>
+</main>
+</body>
+</html>
